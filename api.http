@@ -1,0 +1,47 @@
+POST http://127.0.0.1:8000/api/register
+Content-Type: application/json
+Accept: application/json
+
+{
+    "name": "Admin",
+    "email": "vitor.alecrim.p@gmail.com",
+    "password": "password",
+    "role": "admin"
+}
+
+###
+
+POST http://127.0.0.1:8000/api/login
+Content-Type: application/json
+Accept: application/json
+
+{
+    "email": "admin@example.com",
+    "password": "password",
+}
+
+###
+
+POST http://127.0.0.1:8000/api/forgot-password
+Content-Type: application/json
+Accept: application/json
+
+{
+    "email": "admin@example.com",
+    "password": "password",
+}
+
+
+###
+
+
+POST http://127.0.0.1:8000/api/stores/add
+Content-Type: multipart/form-data
+Accept: application/json
+
+{
+    "name": "Admin",
+    "email": "vitor.alecrim.p@gmail.com",
+    "password": "password",
+    "role": "admin"
+}
